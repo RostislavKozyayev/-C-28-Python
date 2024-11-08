@@ -23,8 +23,23 @@ for count in range(3):
             print("Что-то пошло не так. Пожалуйста, введите целое число.")
 
 # Подсчитываем положительные и отрицательные числа
-positive_count = sum(1 for num in [number1, number2, number3] if num > 0)
-negative_count = sum(1 for num in [number1, number2, number3] if num < 0)
+positive_count = 0
+negative_count = 0
+
+if number1 > 0:
+    positive_count += 1
+elif number1 < 0:
+    negative_count += 1
+
+if number2 > 0:
+    positive_count += 1
+elif number2 < 0:
+    negative_count += 1
+
+if number3 > 0:
+    positive_count += 1
+elif number3 < 0:
+    negative_count += 1
 
 print(f'Количество положительных чисел: {positive_count}')
 print(f'Количество отрицательных чисел: {negative_count}')
