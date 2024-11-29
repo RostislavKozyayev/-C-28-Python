@@ -6,6 +6,7 @@ def count_vowels_russian(s):
     count = sum(1 for char in s if char in vowels)
     return count
 
+
 russian_sentence = "Привет, Мир!"
 vowels_count = count_vowels_russian(russian_sentence)
 print(f"Количество гласных букв: {vowels_count}")
