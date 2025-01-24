@@ -15,6 +15,6 @@ for brand, models in avto.items():
     print(f"{brand}: {models[1]}")
 
 # Выводим все модели словаря
-print("\\nВсе модели словаря:")
+print("Все модели словаря:")
 for brand, models in avto.items():
     print(f"{brand}: {', '.join(models)}")
